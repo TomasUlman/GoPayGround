@@ -1,6 +1,6 @@
 # GoPayGround
 
-GoPayGround je interní nástroj pro testování a ladění chování platební brány GoPay. Umožňuje snadno spouštět testovací platby a akce (refund, recurrence, autorizace...) pomocí GoPay SDK v sandboxovém i produkčním prostředí.
+GoPayGround je interní nástroj pro testování a ladění chování platební brány GoPay. Umožňuje snadno spouštět testovací platby a akce (refund, recurrence, autorizace...) pomocí GoPay SDK v sandbox i produkčním prostředí.
 
 ---
 
@@ -46,7 +46,7 @@ Prostředí lze přepínat mezi:
 ### 📁 Klonuj repozitář
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/TomasUlman/GoPayGround.git
 cd gopayground
 ```
 
@@ -88,7 +88,7 @@ start.bat
 
 ## ⚠️ Poznámky
 
-- Backend credentials **nejsou** součástí repozitáře. Nutné vytvořit `credentials.env`:
+- Backend credentials **nejsou** součástí repozitáře. Nutné vytvořit vle složce backend/api/ `credentials.env`:
 
 ```
 GOPAYGROUND_GOID=...
