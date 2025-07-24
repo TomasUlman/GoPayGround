@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Theme definition using custom CSS variables */
+/* @theme {
+    --font-orbitron: "Orbitron", "sans-serif";
+    --font-inter: "Inter", "sans-serif";
+
+    --color-primary: oklch(71.5% 0.143 215.221);
+    --color-primary-darker: oklch(60.9% 0.126 221.723);
+    --color-secondary: oklch(92.8% 0.006 264.531);
+    --color-secondary-dark: oklch(27.8% 0.033 256.848);
+    --color-dark: oklch(21% 0.034 264.665);
+    --color-divider: oklch(37.3% 0.034 259.733);
+    --color-warning: oklch(57.7% 0.245 27.325);
+} */
+
+/* Theme definition using custom CSS variables */
+@theme {
+    --font-orbitron: "Orbitron", "sans-serif";
+    --font-inter: "Inter", "sans-serif";
+
+    --color-primary: #1EA7E1;
+    --color-primary-darker: #34B5EB;
+    --color-secondary: oklch(92.2% 0 0);
+    --color-secondary-dark: oklch(26.9% 0 0);
+    --color-dark: oklch(20.5% 0 0);
+    --color-divider: oklch(37.1% 0 0);
+    --color-warning: oklch(57.7% 0.245 27.325);
+}
+
+/* Removes number input spin buttons in WebKit browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none m-0;
+}
+
+/* Removes number input arrows in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Custom scrollbar styling – Firefox support */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: oklch(70.8% 0 0) var(--color-secondary-dark);
+}
+
+/* WebKit-based scrollbar – thin, rounded */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-divider);
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: oklch(70.8% 0 0);
+    border-radius: 4px;
+    border: 2px solid var(--color-divider);
+}
+
+/* Animated loader inspired by Afif's CSS loaders
+   See: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+.loader {
+    width: 45px;
+    aspect-ratio: 0.75;
+    --c: no-repeat linear-gradient(var(--color-primary) 0 0);
+    background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+    background-size: 20% 50%;
+    animation: loading 1s infinite linear;
+}
+
+/* Loader animation: bounces bars in Y-axis offset */
+@keyframes loading {
+    20% {
+        background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+
+    40% {
+        background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+
+    60% {
+        background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+
+    80% {
+        background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+}
