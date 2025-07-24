@@ -101,8 +101,6 @@ TECHSUPPORT_CLIENT_SECRET=...
 ```
 
 - Nyní čistě **lokální aplikace**, do budoucna plánovaný deploy.
-- Žádné testy zatím nejsou implementovány.
-- Případné chyby API zobrazovány v odpovědi.
 
 ---
 
