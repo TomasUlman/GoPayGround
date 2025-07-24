@@ -35,7 +35,7 @@ You can switch between these environments:
 ### 📁 Clone the repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/TomasUlman/GoPayGround.git
 cd gopayground
 ```
 
@@ -77,7 +77,7 @@ start.bat
 
 ## ⚠️ Notes
 
-- Backend credentials are **not** included in the repo. You need to create `credentials.env` manually:
+- Backend credentials are **not** included in the repo. You need to create in the folder backend/api/ `credentials.env` manually:
 
 ```
 GOPAYGROUND_GOID=...
@@ -90,8 +90,6 @@ TECHSUPPORT_CLIENT_SECRET=...
 ```
 
 - The app is currently **local-only**, public deployment is planned for the future.
-- No automated tests are implemented at this point.
-- API errors are displayed directly in the response output.
 
 ---
 
