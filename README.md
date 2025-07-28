@@ -1,4 +1,4 @@
-# GoPayGround
+# gopayground
 
 GoPayGround je interní nástroj pro testování a ladění chování platební brány GoPay. Umožňuje snadno spouštět testovací platby a akce (refund, recurrence, autorizace...) pomocí GoPay SDK v sandbox i produkčním prostředí.
 
